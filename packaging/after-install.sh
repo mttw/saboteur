@@ -9,3 +9,6 @@ ln -s /usr/lib/saboteur/cli.py /usr/bin/sab
 rm -f /usr/bin/saboteur-agent
 ln -s /usr/lib/saboteur/agent.py /usr/bin/saboteur-agent
 
+update-rc.d saboteur-agent defaults
+
+service saboteur-agent restart
