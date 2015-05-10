@@ -96,6 +96,19 @@ Resilience testing Saboteur and JUnit
 [some examples](https://github.com/tomakehurst/crash-lab/blob/master/src/test/java/com/tomakehurst/crashlab/ExampleScenarios.java).
 
 
+Building
+--------
+``fpm`` is required for creating the Linux packages:
+``
+sudo apt-get update
+sudo apt-get install ruby-dev build-essential
+sudo gem install fpm
+``
+
+You might want to edit the version in the ``Makefile``.
+
+Then create the packages with ``make deb`` or ``make rpm``.
+
 
 Limitations
 -----------
