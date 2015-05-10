@@ -21,10 +21,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         host.vm.provision "shell", path: "buildbox/provision-build-vm.sh"
     end
 
-    config.vm.define "ubuntu1210" do |host|
-        host.vm.hostname = "ubuntu1210"
-        host.vm.box = "ubuntu1210_64"
-        host.vm.box_url = "https://github.com/downloads/roderik/VagrantQuantal64Box/quantal64.box"
+    config.vm.define "trusty64" do |host|
+        host.vm.hostname = "trusty64"
+        host.vm.box = "ubuntu/trusty64"
 
         host.vm.network :private_network, ip: "192.168.2.201"
 
@@ -35,10 +34,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         end
     end
 
-    config.vm.define "fedora19" do |host|
-        host.vm.hostname = "fedora19"
-        host.vm.box = "fedora19_64"
-        host.vm.box_url = "https://dl.dropboxusercontent.com/u/86066173/fedora-19.box"
+    config.vm.define "fedora20" do |host|
+        host.vm.hostname = "fedora20"
+        host.vm.box = "fedora20"
+        host.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_fedora-20_chef-provisionerless.box"
 
         host.vm.network :private_network, ip: "192.168.2.202"
 
