@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 DAEMON=/usr/bin/saboteur-agent
-PIDFILE=/var/run/saboteur/agent.pid
+PIDFILE=/var/run/saboteur-agent.pid
 LOG=/var/log/saboteur/agent-error.log
 
 start_saboteur() {
