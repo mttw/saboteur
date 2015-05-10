@@ -1,5 +1,5 @@
 BUILDDIR = build
-VERSION = 0.7
+VERSION = 0.7.0.1
 
 .PHONY: clean rpm deb test
 
